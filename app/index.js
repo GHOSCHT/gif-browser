@@ -5,6 +5,8 @@ import { createStore } from "redux";
 import rootReducer from "./reducers";
 import { AppContainer as ReactHotAppContainer } from "react-hot-loader";
 import Home from "./components/Home";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import NavBar from "./components/NavBar";
 
 const AppContainer = process.env.PLAIN_HMR ? Fragment : ReactHotAppContainer;
 
@@ -16,6 +18,8 @@ const store = createStore(
 render(
   <AppContainer>
     <Provider store={store}>
+      <CssBaseline />
+      <NavBar />
       <Home />
     </Provider>
   </AppContainer>,
