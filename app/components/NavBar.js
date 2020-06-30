@@ -14,39 +14,31 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  title: {
-    display: "none",
-    [theme.breakpoints.up("sm")]: {
-      display: "block",
-    },
-  },
 }));
 
 export default function PrimarySearchAppBar() {
   const classes = useStyles();
 
   return (
-    <div className={classes.grow}>
-      <AppBar position="static">
-        <Toolbar variant="dense">
-          <Typography className={classes.title} variant="h6" noWrap>
-            GIF Viewer
-          </Typography>
+    <AppBar position="static">
+      <Toolbar variant="dense">
+        <Typography variant="h6" noWrap>
+          GIF Viewer
+        </Typography>
 
-          <div className={classes.grow} />
+        <div className={classes.grow} />
 
-          <Tooltip title="Toggle light/dark theme">
-            <IconButton
-              edge="end"
-              aria-label="account of current user"
-              aria-haspopup="true"
-              color="inherit"
-            >
-              <BrightnessHighIcon />
-            </IconButton>
-          </Tooltip>
-        </Toolbar>
-      </AppBar>
-    </div>
+        <Tooltip title="Toggle light/dark theme">
+          <IconButton
+            edge="end"
+            aria-label="account of current user"
+            aria-haspopup="true"
+            color="inherit"
+          >
+            <BrightnessHighIcon />
+          </IconButton>
+        </Tooltip>
+      </Toolbar>
+    </AppBar>
   );
 }
