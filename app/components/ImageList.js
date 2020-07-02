@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Component } from "react";
-import Image from "./Image";
+import ImageCard from "./ImageCard";
 import { GridList } from "@material-ui/core";
 import GridListTile from "@material-ui/core/GridListTile";
 import { makeStyles } from "@material-ui/core/styles";
@@ -46,7 +46,7 @@ export default function ImageList() {
 
   if (!loading && data != undefined) {
     const images = data.results.map((item) => (
-      <Image key={item.id} src={item.media["0"].gif.url} url={item.url} />
+      <ImageCard key={item.id} src={item.media["0"].gif.url} url={item.url} />
     ));
     return <div className={classes.innerFlex}>{images}</div>;
   }

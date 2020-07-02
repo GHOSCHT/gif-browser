@@ -37,6 +37,13 @@ export default function Image(props) {
         >
           Download
         </Button>
+        <Button
+          size="small"
+          color="secondary"
+          onClick={() => navigator.clipboard.writeText(props.src)}
+        >
+          Copy to Clipboard
+        </Button>
       </CardActions>
     </Card>
   );
