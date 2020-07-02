@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     strategy:
       matrix:
@@ -23,3 +23,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: yarn
     - run: yarn package-win
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        # Artifact name
+        name: Winx64_executable
+        # A file, directory or wildcard pattern that describes what to upload
+        path: release/win-unpacked
