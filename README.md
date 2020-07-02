@@ -1,6 +1,6 @@
-# electron-react-boilerplate
+# gif-browser
 
-[![Build](https://github.com/GHOSCHT/electron-react-boilerplate/workflows/Build/badge.svg)](https://github.com/GHOSCHT/electron-react-boilerplate/actions?query=workflow%3ABuild)
+[![Build](https://github.com/GHOSCHT/gif-viewer/workflows/Build/badge.svg)](https://github.com/GHOSCHT/gif-viewer/actions?query=workflow%3ABuild)
 
 ## Features
 
