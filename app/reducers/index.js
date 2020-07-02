@@ -1,6 +1,7 @@
 //rootReducer
 import { combineReducers } from "redux";
+import darkModeReducer from "./isDarkMode";
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({ darkModeReducer });
 
 export default rootReducer;
