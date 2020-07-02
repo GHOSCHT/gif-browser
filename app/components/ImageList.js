@@ -11,14 +11,6 @@ const useStyles = makeStyles((theme) => ({
     overflow: "hidden",
     margin: 0,
   },
-  outerFlex: {
-    height: "100%",
-    padding: "0px",
-    margin: "0px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
 }));
 
 export default function ImageList() {
