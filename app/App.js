@@ -5,6 +5,7 @@ import React from "react";
 import rootReducer from "./reducers";
 import { useSelector, useDispatch } from "react-redux";
 import ImageList from "./components/ImageList";
+import SearchBar from "./components/SearchBar";
 
 const darkTheme = createMuiTheme({
   palette: {
@@ -36,6 +37,7 @@ function App() {
   return (
     <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
       <NavBar />
+      <SearchBar />
       <CssBaseline />
       <ImageList />
     </ThemeProvider>
