@@ -36,7 +36,7 @@ export default function PrimarySearchAppBar() {
 
         <div className={classes.grow} />
 
-        <Tooltip title="Creator on GitHub">
+        <Tooltip title="Developer on GitHub">
           <IconButton
             edge="end"
             aria-label="account of current user"
@@ -49,7 +49,7 @@ export default function PrimarySearchAppBar() {
           </IconButton>
         </Tooltip>
 
-        <Tooltip title="Creator on Twitter">
+        <Tooltip title="Developer on Twitter">
           <IconButton
             edge="end"
             aria-label="account of current user"

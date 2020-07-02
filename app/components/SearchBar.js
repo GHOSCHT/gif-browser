@@ -12,20 +12,23 @@ const useStyles = makeStyles((theme) => ({
   root: {
     padding: "2px 4px",
     marginTop: "80px",
+    marginBottom: "10px",
+    marginLeft: "20px",
+    marginRight: "20px",
     display: "flex",
     alignItems: "center",
-    width: 700,
+    width: "700px",
   },
   input: {
     marginLeft: theme.spacing(1),
     flex: 1,
   },
   iconButton: {
-    padding: 10,
+    padding: "10px",
   },
   divider: {
-    height: 28,
-    margin: 4,
+    height: "28px",
+    margin: "4px",
   },
 }));
 
