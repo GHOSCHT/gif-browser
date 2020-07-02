@@ -9,7 +9,10 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexWrap: "wrap",
     overflow: "hidden",
-    margin: 0,
+    justifyContent: "space-evenly",
+    marginLeft: "10px",
+    marginRight: "10px",
+    marginBottom: "20px",
   },
 }));
 
