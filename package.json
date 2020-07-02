@@ -1,11 +1,11 @@
 {
-  "name": "electron-react-boilerplate",
-  "productName": "AppNameHere",
-  "version": "0.18.0",
-  "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
+  "name": "gif-browser",
+  "productName": "GIF Browser",
+  "version": "0.1.0",
+  "description": "An application to browse GIFS on Tenor.com",
   "build": {
-    "productName": "AppNameHere",
-    "appId": "org.develar.AppNameHere",
+    "productName": "GifBrowser",
+    "appId": "org.develar.GifBrowser",
     "files": [
       "dist/",
       "node_modules/",
