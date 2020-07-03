@@ -3,6 +3,7 @@
 [![Build](https://github.com/GHOSCHT/gif-viewer/workflows/Build/badge.svg)](https://github.com/GHOSCHT/gif-viewer/actions?query=workflow%3ABuild)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c2a6bc2d11984346a1444c98074da658)](https://www.codacy.com/manual/GHOSCHT/gif-browser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=GHOSCHT/gif-browser&amp;utm_campaign=Badge_Grade)
 
+
 ## Getting Started
 
 ### Installation
