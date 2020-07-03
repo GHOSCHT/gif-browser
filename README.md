@@ -29,7 +29,7 @@ yarn dev
 
 ## Packaging
 
-Deploy to GitHub Pages
+Package for your current platform
 
 ```sh
 npm package
