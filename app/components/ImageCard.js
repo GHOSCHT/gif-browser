@@ -20,6 +20,34 @@ const useStyles = makeStyles({
   },
 });
 
+function downloadImage(url) {
+  var fs = require("fs"),
+    request = require("request");
+
+  var download = function(uri, filename, callback) {
+    request.head(uri, function(err, res, body) {
+      request(uri).pipe(fs.createWriteStream(filename));
+    });
+  };
+
+  const app = require("electron").remote;
+  var dialog = app.dialog;
+
+  const dialogOptions = {
+    title: "Save GIF",
+    filters: [
+      { name: "Images", extensions: ["gif"] },
+      { name: "All Files", extensions: ["*"] },
+    ],
+  };
+
+  dialog.showSaveDialog(dialogOptions, (fileName) => {
+    if (fileName !== undefined) {
+      download(url, fileName);
+    }
+  });
+}
+
 export default function Image(props) {
   const classes = useStyles();
   const shell = require("electron").shell;
@@ -33,7 +61,7 @@ export default function Image(props) {
         <Button
           size="small"
           color="secondary"
-          onClick={() => shell.openExternal(props.url)}
+          onClick={() => downloadImage(props.hqUrl)}
         >
           Download
         </Button>
