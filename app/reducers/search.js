@@ -1,4 +1,4 @@
-const initialState = "Rick Astley";
+const initialState = "Pepe";
 
 export default (state = initialState, { type, payload }) => {
   switch (type) {
