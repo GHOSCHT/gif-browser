@@ -37,7 +37,7 @@ export default function ImageList() {
   }, [search]);
 
   if (loading || (!loading && data === undefined)) {
-    return <div>loading...</div>;
+    return <div></div>;
   }
 
   if (!loading && data !== null) {

@@ -10,6 +10,7 @@ import DirectionsIcon from "@material-ui/icons/Directions";
 import { Formik, Form, Field } from "formik";
 import { useSelector, useDispatch } from "react-redux";
 import { setSearch } from "../actions";
+import * as Yup from "yup";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,6 +36,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const searchSchema = Yup.object().shape({
+  search: Yup.string()
+    .required()
+    .trim(),
+});
+
 export default function SearchBar() {
   const classes = useStyles();
   const dispatch = useDispatch();
@@ -44,6 +51,7 @@ export default function SearchBar() {
       <Formik
         onSubmit={(data) => dispatch(setSearch(data.search))}
         initialValues={{ search: "" }}
+        validationSchema={searchSchema}
       >
         {({ values }) => (
           <Form>
