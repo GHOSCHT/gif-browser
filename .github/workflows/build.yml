@@ -25,3 +25,8 @@ jobs:
       run: yarn --network-timeout 1000000000
     - name: Package for Windows
       run: yarn package-win
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: Winx64_executable
+        path: release/win-unpacked
