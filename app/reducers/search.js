@@ -1,6 +1,4 @@
-const initialState = "Pepe";
-
-export default (state = initialState, { type, payload }) => {
+export default (state = "Rick Astley", { type, payload }) => {
   switch (type) {
     case "SETSEARCH":
       return payload;
