@@ -1,51 +1,48 @@
 # gif-browser
 
 [![Build](https://github.com/GHOSCHT/gif-viewer/workflows/Build/badge.svg)](https://github.com/GHOSCHT/gif-viewer/actions?query=workflow%3ABuild)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c2a6bc2d11984346a1444c98074da658)](https://www.codacy.com/manual/GHOSCHT/gif-browser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=GHOSCHT/gif-browser&amp;utm_campaign=Badge_Grade)
 
-## Features
+## Getting Started
 
-- Includes Electron, React, Formik with Yup Validation, React Router and Redux and fontawesome
-- Includes premade CI via GitHub Actions
+### Installation
 
-## Install
+1.  Clone the repo
 
-First, clone the repo via git:
-
-```bash
-git clone --depth 1 --single-branch --branch master https://github.com/GHOSCHT/electron-react-boilerplate your-project-name
+```sh
+git clone https://github.com/GHOSCHT/gif-browser.git
 ```
 
-And then install the dependencies with yarn.
+2.  Install NPM packages
 
-```bash
-cd your-project-name
+```sh
 yarn
 ```
 
-## Starting Development
+## Development server
 
-Start the app in the `dev` environment. This starts the renderer process in [**hot-module-replacement**](https://webpack.js.org/guides/hmr-react/) mode and starts a webpack dev server that sends hot updates to the renderer process:
+Start the development server
 
-```bash
+```sh
 yarn dev
 ```
 
-## Packaging for Production
+## Packaging
 
-To package apps for the local platform:
+Deploy to GitHub Pages
 
-```bash
-yarn package
+```sh
+npm package
 ```
 
 ## Built With
 
-- [React](https://reactjs.org/)
-- [Formik](https://jaredpalmer.com/formik/)
-- [Yup](https://github.com/jquense/yup)
-- [React Router](https://reacttraining.com/react-router/)
-- [Redux](https://react-redux.js.org/)
+-   [Electron](https://www.electronjs.org/)
+-   [React](https://reactjs.org/)
+-   [Material UI](https://material-ui.com/)
+-   [Formik](https://jaredpalmer.com/formik/)
+-   [Yup](https://github.com/jquense/yup)
 
-## Docs
+## License
 
-See our [docs and guides here](https://electron-react-boilerplate.js.org/docs/installation)
+Distributed under the MIT License. See `LICENSE` for more information.
