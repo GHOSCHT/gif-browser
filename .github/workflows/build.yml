@@ -30,3 +30,6 @@ jobs:
         name: Winx64_executable
         # A file, directory or wildcard pattern that describes what to upload
         path: release/win-unpacked
+    - name: GitHub Releases
+      uses: fnkr/github-action-ghr@v1.3
+
