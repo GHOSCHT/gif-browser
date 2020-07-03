@@ -1,8 +1,7 @@
 # gif-browser
 
 [![Build](https://github.com/GHOSCHT/gif-viewer/workflows/Build/badge.svg)](https://github.com/GHOSCHT/gif-viewer/actions?query=workflow%3ABuild)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c2a6bc2d11984346a1444c98074da658)](https://www.codacy.com/manual/GHOSCHT/gif-browser?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=GHOSCHT/gif-browser&amp;utm_campaign=Badge_Grade)
-
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c2a6bc2d11984346a1444c98074da658)](https://www.codacy.com/manual/GHOSCHT/gif-browser?utm_source=github.com&utm_medium=referral&utm_content=GHOSCHT/gif-browser&utm_campaign=Badge_Grade)
 
 ## Getting Started
 
@@ -38,11 +37,11 @@ npm package
 
 ## Built With
 
--   [Electron](https://www.electronjs.org/)
--   [React](https://reactjs.org/)
--   [Material UI](https://material-ui.com/)
--   [Formik](https://jaredpalmer.com/formik/)
--   [Yup](https://github.com/jquense/yup)
+- [Electron](https://www.electronjs.org/)
+- [React](https://reactjs.org/)
+- [Material UI](https://material-ui.com/)
+- [Formik](https://jaredpalmer.com/formik/)
+- [Yup](https://github.com/jquense/yup)
 
 ## License
 

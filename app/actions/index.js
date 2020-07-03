@@ -1,8 +1,6 @@
 //ACTIONS
 export const toggleDarkMode = () => {
-  return {
-    type: "TOGGLEDARKMODE",
-  };
+  return { type: "TOGGLEDARKMODE" };
 };
 
 export const setSearch = (payload) => {

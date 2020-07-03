@@ -36,12 +36,11 @@ export default function ImageList() {
     fetchAPI();
   }, [search]);
 
-  if (loading || (!loading && data == undefined)) {
-    console.log("loading");
+  if (loading || (!loading && data === undefined)) {
     return <div>loading...</div>;
   }
 
-  if (!loading && data != undefined) {
+  if (!loading && data !== null) {
     const images = data.results.map((item) => (
       <ImageCard
         key={item.id}
