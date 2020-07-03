@@ -4,3 +4,10 @@ export const toggleDarkMode = () => {
     type: "TOGGLEDARKMODE",
   };
 };
+
+export const setSearch = (payload) => {
+  return {
+    type: "SETSEARCH",
+    payload,
+  };
+};

@@ -3,6 +3,7 @@ import ImageCard from "./ImageCard";
 import { GridList } from "@material-ui/core";
 import GridListTile from "@material-ui/core/GridListTile";
 import { makeStyles } from "@material-ui/core/styles";
+import { useSelector } from "react-redux";
 
 const useStyles = makeStyles((theme) => ({
   innerFlex: {
@@ -20,10 +21,11 @@ export default function ImageList() {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState();
   const classes = useStyles();
+  const search = useSelector((state) => state.searchReducer);
 
   useEffect(() => {
     async function fetchAPI() {
-      const searchTerm = "rick astley";
+      const searchTerm = search;
       const itemLimit = 50;
       const url = `https://api.tenor.com/v1/search?q=${searchTerm}&limit=${itemLimit}`;
       const response = await fetch(url);
@@ -32,7 +34,7 @@ export default function ImageList() {
       setData(apiData);
     }
     fetchAPI();
-  }, []);
+  }, [search]);
 
   if (loading || (!loading && data == undefined)) {
     console.log("loading");
@@ -41,7 +43,12 @@ export default function ImageList() {
 
   if (!loading && data != undefined) {
     const images = data.results.map((item) => (
-      <ImageCard key={item.id} src={item.media["0"].gif.url} url={item.url} />
+      <ImageCard
+        key={item.id}
+        src={item.media["0"].tinygif.url}
+        hqUrl={item.media["0"].gif.url}
+        url={item.url}
+      />
     ));
     return <div className={classes.innerFlex}>{images}</div>;
   }
