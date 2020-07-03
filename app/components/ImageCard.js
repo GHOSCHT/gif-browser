@@ -40,7 +40,7 @@ export default function Image(props) {
         <Button
           size="small"
           color="secondary"
-          onClick={() => navigator.clipboard.writeText(props.src)}
+          onClick={() => navigator.clipboard.writeText(props.hqUrl)}
         >
           Copy to Clipboard
         </Button>
