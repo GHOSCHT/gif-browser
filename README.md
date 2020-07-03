@@ -9,13 +9,13 @@
 
 1.  Clone the repo
 
-``` sh
+```sh
 git clone https://github.com/GHOSCHT/gif-browser.git
 ```
 
 2.  Install NPM packages
 
-``` sh
+```sh
 yarn
 ```
 
@@ -23,7 +23,7 @@ yarn
 
 Start the development server
 
-``` sh
+```sh
 yarn dev
 ```
 
@@ -31,17 +31,17 @@ yarn dev
 
 Deploy to GitHub Pages
 
-``` sh
+```sh
 npm package
 ```
 
 ## Built With
 
-* [Electron](https://www.electronjs.org/)
-* [React](https://reactjs.org/)
-* [Material UI](https://material-ui.com/)
-* [Formik](https://jaredpalmer.com/formik/)
-* [Yup](https://github.com/jquense/yup)
+-   [Electron](https://www.electronjs.org/)
+-   [React](https://reactjs.org/)
+-   [Material UI](https://material-ui.com/)
+-   [Formik](https://jaredpalmer.com/formik/)
+-   [Yup](https://github.com/jquense/yup)
 
 ## License
 
