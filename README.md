@@ -42,6 +42,7 @@ npm package
 -   [Material UI](https://material-ui.com/)
 -   [Formik](https://jaredpalmer.com/formik/)
 -   [Yup](https://github.com/jquense/yup)
+-   [Styled Components](https://styled-components.com/)
 
 ## License
 
