@@ -2,8 +2,9 @@ import React, { Fragment } from "react";
 import { render } from "react-dom";
 import { AppContainer as ReactHotAppContainer } from "react-hot-loader";
 import { Provider } from "react-redux";
-import App from "./App";
 import { createStore } from "redux";
+
+import App from "./App";
 import rootReducer from "./reducers";
 
 const AppContainer = process.env.PLAIN_HMR ? Fragment : ReactHotAppContainer;

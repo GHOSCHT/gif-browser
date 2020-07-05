@@ -1,16 +1,17 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import makeStyles from "@material-ui/core/styles/makeStyles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import BrightnessHighIcon from "@material-ui/icons/BrightnessHigh";
 import Tooltip from "@material-ui/core/Tooltip";
-import { useSelector, useDispatch } from "react-redux";
-import { toggleDarkMode } from "../actions";
 import Brightness4Icon from "@material-ui/icons/Brightness4";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import { useSelector, useDispatch } from "react-redux/";
+
+import { toggleDarkMode } from "../actions";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
