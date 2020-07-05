@@ -1,26 +1,20 @@
 import React, { useState, useEffect, Component } from "react";
-import ImageCard from "./ImageCard";
-import { GridList } from "@material-ui/core";
-import GridListTile from "@material-ui/core/GridListTile";
-import { makeStyles } from "@material-ui/core/styles";
 import { useSelector } from "react-redux";
+import styled from "styled-components";
 
-const useStyles = makeStyles((theme) => ({
-  innerFlex: {
-    display: "flex",
-    flexWrap: "wrap",
-    overflow: "hidden",
-    justifyContent: "space-evenly",
-    marginLeft: "10px",
-    marginRight: "10px",
-    marginBottom: "20px",
-  },
-}));
+import ImageCard from "./ImageCard";
+
+const Grid = styled.div`
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+  margin: 20px;
+  justify-items: center;
+`;
 
 export default function ImageList() {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState();
-  const classes = useStyles();
   const search = useSelector((state) => state.searchReducer);
 
   useEffect(() => {
@@ -49,6 +43,6 @@ export default function ImageList() {
         url={item.url}
       />
     ));
-    return <div className={classes.innerFlex}>{images}</div>;
+    return <Grid>{images}</Grid>;
   }
 }
