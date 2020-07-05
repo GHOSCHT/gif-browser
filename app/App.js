@@ -1,9 +1,10 @@
+import React from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import NavBar from "./components/NavBar";
-import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import React from "react";
-import rootReducer from "./reducers";
-import { useSelector, useDispatch } from "react-redux";
+import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
+import { ThemeProvider } from "@material-ui/core/styles";
+import { useSelector } from "react-redux";
+
 import ImageList from "./components/ImageList";
 import SearchBar from "./components/SearchBar";
 
@@ -23,10 +24,10 @@ const lightTheme = createMuiTheme({
   palette: {
     type: "light",
     primary: {
-      main: "#30C078",
+      main: darkTheme.palette.secondary.main,
     },
     secondary: {
-      main: "#7289DA",
+      main: darkTheme.palette.secondary.main,
     },
   },
 });
