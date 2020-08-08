@@ -2,13 +2,12 @@ name: Build
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
-
     runs-on: windows-latest
 
     strategy:
@@ -16,17 +15,22 @@ jobs:
         node-version: [14.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install dependencies    
-      run: yarn --network-timeout 1000000000
-    - name: Package for Windows
-      run: yarn package-win
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: Winx64_executable
-        path: release/win-unpacked
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: yarn --network-timeout 1000000000
+      - name: Package for Windows
+        run: yarn pack:win
+      - name: Upload installer
+        uses: actions/upload-artifact@v2
+        with:
+          name: GifBrowser-Setup
+          path: dist/GifBrowser-Setup.exe
+      - name: Upload portable files
+        uses: actions/upload-artifact@v2
+        with:
+          name: GifBrowser-Portable
+          path: dist/win-unpacked

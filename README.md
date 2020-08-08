@@ -24,16 +24,18 @@ yarn
 Start the development server
 
 ```sh
-yarn dev
+yarn develop
 ```
 
 ## Packaging
 
-Package for your current platform
+Package for your desired platform
 
 ```sh
-npm package
+npm pack:{platform}
 ```
+
+replace {platform} with one of the following platforms: win, mac, linux
 
 ## Built With
 
