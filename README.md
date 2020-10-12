@@ -1,5 +1,5 @@
 <p align="center">
-      <img src="./img/header.png" height=100 style="pointer-events: none">
+      <img src="./img/header.png" height=100>
 </p>
 
 [![Build](https://github.com/GHOSCHT/gif-viewer/workflows/Build/badge.svg)](https://github.com/GHOSCHT/gif-viewer/actions?query=workflow%3ABuild)
