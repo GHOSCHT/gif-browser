@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
@@ -22,15 +22,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
         run: yarn --network-timeout 1000000000
-      - name: Package for Windows
-        run: yarn pack:win
-      - name: Upload installer
-        uses: actions/upload-artifact@v2
-        with:
-          name: GifBrowser-Setup
-          path: dist/GifBrowser-Setup.exe
-      - name: Upload portable files
-        uses: actions/upload-artifact@v2
-        with:
-          name: GifBrowser-Portable
-          path: dist/win-unpacked
+      - name: Package for Linux
+        run: yarn pack:linux
